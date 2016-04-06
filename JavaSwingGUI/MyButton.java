@@ -14,13 +14,13 @@ import javax.swing.text.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Button extends JFrame
+public class MyButton extends JFrame
 {
 	private JButton button;
 	private String button_text;
 	private ImageIcon button_image;
 	
-	public Button(String button_text, String path_to_image)
+	public MyButton(String button_text, String path_to_image)
 	{
 		set_button_text(button_text);
 		set_button_image(path_to_image);

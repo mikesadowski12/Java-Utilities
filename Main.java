@@ -20,7 +20,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		myGui = new GuiClass();
-		myGui.add_button("my button", "./JavaSwingGUI/Button/images/run.png");
+		myGui.add_button("my button", "./JavaSwingGUI/images/run.png");
 	}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

@@ -19,8 +19,13 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class GuiClass extends JFrame
 {
-	private Button[] buttons; 
+	private MyButton[] buttons; 
 	private int button_count;
+	
+	public static void main(String[] args)
+	{
+		
+	}
 	
 	public GuiClass()
 	{
@@ -31,7 +36,7 @@ public class GuiClass extends JFrame
 	{
 		this.button_count++;
 		
-		this.buttons[button_count] = new Button(button_text, path_to_image);	
+		this.buttons[button_count] = new MyButton(button_text, path_to_image);	
 	}
 
 }	
