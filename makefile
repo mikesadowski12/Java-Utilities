@@ -16,8 +16,8 @@ $(programname): start GuiClass
 	$(compiler) $(flags) $(files)
 	mv $(output) $(programname)
 
-GuiClass: 
-	$(compiler) $(flags) ./JavaSwingGUI/GuiClass.java ./JavaSwingGUI/Button/Button.java
+GuiClass: ./JavaSwingGUI/GuiClass.java  ./JavaSwingGUI/Button/Button.java
+	$(compiler) $(flags) ./JavaSwingGUI/GuiClass.java 
 	mv ./JavaSwingGUI/GuiClass.class ./$(programname)
 	mv ./JavaSwingGUI/Button/Button.class ./$(programname)
 

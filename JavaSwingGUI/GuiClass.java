@@ -24,14 +24,14 @@ public class GuiClass extends JFrame
 	
 	public GuiClass()
 	{
-		
+		button_count = 0;
 	}
 	
 	public void add_button(String button_text, String path_to_image)
 	{
 		this.button_count++;
 		
-		buttons[button_count] = new Button(button_text, path_to_image);	
+		this.buttons[button_count] = new Button(button_text, path_to_image);	
 	}
 
 }	

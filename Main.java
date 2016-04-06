@@ -15,10 +15,12 @@ public class Main
 	private double real_val = 0.0;
 	private boolean bool_val = false;
 	private String str_val = ""; 
+	private GuiClass myGui;
 	
 	public static void main(String[] args)
 	{
-		new Main();
+		myGui = new GuiClass();
+		myGui.add_button("my button", "./JavaSwingGUI/Button/images/run.png");
 	}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
