@@ -12,17 +12,13 @@ flags =
 
 all: clean $(programname)
 	
-$(programname): start GuiClass
+$(programname): start
 	$(compiler) $(flags) $(files)
-	mv $(output) $(programname)
+	mv *.class ./$(programname)
 
-GuiClass: ./JavaSwingGUI/GuiClass.java MyButton
-	$(compiler) $(flags) ./JavaSwingGUI/GuiClass.java 
-	#mv ./JavaSwingGUI/GuiClass.class ./$(programname)
-	#mv ./JavaSwingGUI/Button/MyButton.class ./$(programname)
-
-MyButton:
-	$(compiler) $(flags) ./JavaSwingGUI/MyButton.java
+GUI:
+	$(compiler) $(flags) ./JavaSwingGUI/GUI.java
+	mv ./JavaSwingGUI/*.class .
 	
 start:
 	mkdir $(programname)
